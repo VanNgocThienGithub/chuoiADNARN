@@ -1,0 +1,26 @@
+fun main() { 
+    var g=bai1("aTcg")
+    println(g) 
+}
+fun bai1(DNA: String):String
+{
+    var a:String=""
+    for(element in DNA)
+    {
+       // println(element)
+        when(element)
+    	{
+         'g'->a=a+"C"
+         'G'->a=a+"C"
+         'c'->a=a+"G"
+         'C'->a=a+"G"
+         't'->a=a+"A"
+         'T'->a=a+"A"
+         'a'->a=a+"U"
+         'A'->a=a+"U"
+          else -> return "khong co chuoi ARN tuong ung"
+            
+    	} 
+    }
+    return a
+}
